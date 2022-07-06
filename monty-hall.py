@@ -32,8 +32,8 @@ def monty_hall(plays, switch):
         else:
             print(result + " - LOSE")
 
-    print("Win rate: {0:.2f}%".format((wins/plays) * 100))
+    print("Number of plays: {0} | Switch?: {1} | Win rate: {2:.2f}%".format(plays, switch, (wins/plays) * 100))
 
 if __name__ == '__main__':
-    monty_hall(10000, True)
+    monty_hall(10000, False)
 
